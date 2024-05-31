@@ -1,0 +1,47 @@
+.mnrqrmnts{
+  min-height: 200px;
+  min-width: 200px
+}
+
+.frbg{
+  background-color: #FEFFD2;
+}
+
+.toolbar {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  background: #f7f7f7;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.toolbar button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background: #e7e7e7;
+}
+
+.toolbar button:active,
+.toolbar button:focus {
+  outline: none;
+}
+
+div[contenteditable] {
+  min-height: 300px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+}
+

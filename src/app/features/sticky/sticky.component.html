@@ -1,10 +1,12 @@
-<div class="card">
+<div class="card frbg mnrqrmnts">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-    <tiptap-editor [editor]="editor" [(ngModel)]="value"></tiptap-editor>
-    <tiptap-floating-menu [editor]="editor">
-
-    </tiptap-floating-menu>
+    <div class="toolbar">
+      <button (click)="toggleBold()" title="Bold"><strong>B</strong></button>
+      <button (click)="toggleItalic()" title="Italic"><em>I</em></button>
+      <button (click)="setParagraph()" title="Paragraph">P</button>
+      <button (click)="toggleBulletList()" title="Bullet List">&#8226; List</button>
+      <button (click)="toggleOrderedList()" title="Ordered List">1. List</button>
+    </div>
+    <div #editorElement></div>
   </div>
 </div>
